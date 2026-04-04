@@ -26,8 +26,8 @@ jobs:
         run: bun install -g opencode-ai
 
       # Install opencode (global)
-      - name: Install opencodes
-        run: timeout 19
+      # - name: Install opencodes
+        # run: timeout 19
 
               # Install opencode (global)
       - name: Install opencode
