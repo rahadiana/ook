@@ -23,7 +23,7 @@ jobs:
 
       # Install opencode (global)
       - name: Install opencode
-        run: bun add -g opencode
+        run: bun install -g opencode-ai
 
       - name: Verify opencode
         run: opencode --help
