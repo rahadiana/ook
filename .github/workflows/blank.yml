@@ -23,16 +23,9 @@ jobs:
 
       # Install opencode (global)
       - name: Install opencode
-        run: bun install -g opencode-ai
-
-      # Install opencode (global)
-      # - name: Install opencodes
-        # run: timeout 19
-
-              # Install opencode (global)
-      - name: Install opencode
-        run: bun install -g opencode-ai
-
+        run: |
+          bun install -g opencode-ai
+          sleep 5
         
       - name: Verify opencode
         run: opencode --help
@@ -40,4 +33,5 @@ jobs:
       # Contoh eksekusi
       - name: Run opencode test
         run: |
+          opencode -m opencode/qwen3.6-plus
           opencode run "console.log('Hello from opencode')"
