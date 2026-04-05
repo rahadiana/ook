@@ -33,5 +33,4 @@ jobs:
       # Contoh eksekusi
       - name: Run opencode test
         run: |
-          opencode -m opencode/qwen3.6-plus
-          opencode run "console.log('Hello from opencode')"
+          opencode run "console.log('Hello from opencode')" -m dashscope/qwen3.6-plus
