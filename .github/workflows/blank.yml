@@ -33,4 +33,4 @@ jobs:
       # Contoh eksekusi
       - name: Run opencode test
         run: |
-          opencode run "console.log('Hello from opencode')" -m opencode/qwen3.6-plus-free
+          opencode run "console.log('jelaskan apa itu javascript')" -m opencode/qwen3.6-plus-free
